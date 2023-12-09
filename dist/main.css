@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-image: url(f2264bbe40a957304084.jpg);
+}
+
+body{
+    height: auto;
+}
+
+p{
+    text-align: center;
+
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+br{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+img{
+    max-width: 500px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.inputSearch{
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.buttonSearch{
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.containerSearch{
+    display: flex;
+    justify-content: center;
+
+}
+
+.row{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-direction: column;
+    
+}
+
+
+

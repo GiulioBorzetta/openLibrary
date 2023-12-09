@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+}
+
+.descriptionTitle{
+    text-align: center;
+    text-decoration: underline;
+}
+
+br{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+img{
+    max-width: 500px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.buttonSearch{
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.containerSearch{
+    display: flex;
+    justify-content: center;
+
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.col{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+
+    
+}
+
+.mb{
+    margin-bottom: 50px;
+}
+
+.mt{
+    margin-top: 50px;
+}
+
+.ml{
+    margin-left: 25px;
+}
+
+.mr{
+    margin-right: 25px;
+}
+
+.flexLibrary{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.buttonSearch:hover{
+    background-color: rgb(222, 222, 245);
+    transition: 0.5s;
+}
+
+.backgroundBooks{
+    background-color: rgb(215, 235, 253);
+}
+
+.centerLibrary{
+    justify-content: center;
+}
+
+.marginHr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.verticalLine{
+    border: 1px solid blue;
+    height: 7000px;
+    margin: 0;
+}
+
