@@ -13,7 +13,7 @@ const inputValue = document.getElementById("input").value.trim();
 
 // Verifica se l'input è valido
 if (!inputValue) {
-console.error('Inserisci un titolo valido');
+console.error('Please enter a valid title');
 return;
 }
 
@@ -22,7 +22,7 @@ fetch(`${apiUrl}${inputValue}`)
 .then(response => {
     // Controlla se la richiesta ha avuto successo (status code 200-299)
     if (!response.ok) {
-        throw new Error(`Errore nella richiesta all'API: ${response.status}`);
+        throw new Error(`Error in API request: ${response.status}`);
     }
     // Parsifica la risposta JSON
     return response.json();
@@ -47,7 +47,7 @@ fetch(`${apiUrl}${inputValue}`)
             resultContainer.appendChild(author);
 
             const button = document.createElement("button");
-            button.textContent = "Clicca qui per la descrizione";
+            button.textContent = "Click here for description";
             button.classList.add("buttonSearch");
             button.addEventListener("click", function(){
 
@@ -62,7 +62,7 @@ fetch(`${apiUrl}${inputValue}`)
                         // Verifica se ci sono dati disponibili
                         if(!data.description){
                             const noDescription = document.createElement("p");
-                            noDescription.textContent = "non é presente alcuna descrizione per questo libro";
+                            noDescription.textContent = "There is no description for this book";
                             resultDescription.appendChild(noDescription);
                         }
                         else if(data.description.value){
@@ -83,7 +83,7 @@ fetch(`${apiUrl}${inputValue}`)
                         console.log(data);
                     })
                     .catch(error => {
-                        console.error('Errore durante la richiesta:', error);
+                        console.error('Error during request:', error);
                     });
             });
 
@@ -96,12 +96,12 @@ fetch(`${apiUrl}${inputValue}`)
 
         }
     } else {
-        console.error('La risposta JSON non contiene un array "docs" valido.');
+        console.error('The JSON response does not contain a valid "docs" array.');
     }
 })
 .catch(error => {
     // Gestisci gli errori
-    console.error('Errore durante la chiamata all\'API:', error);
+    console.error('Error calling API:', error);
 });
 
 });
@@ -118,7 +118,7 @@ const inputValue = document.getElementById("inputSearchCategory").value;
 
 // Verifica se l'input è valido
 if (!inputValue) {
-console.error('Inserisci una categoria valida');
+console.error('Please enter a valid category');
 return;
 }
 
@@ -127,7 +127,7 @@ fetch(`${apiUrl}${inputValue}`)
 .then(response => {
 // Controlla se la richiesta ha avuto successo (status code 200-299)
 if (!response.ok) {
-throw new Error(`Errore nella richiesta all'API: ${response.status}`);
+throw new Error(`Error in API request: ${response.status}`);
 }
 // Parsifica la risposta JSON
 return response.json();
@@ -152,7 +152,7 @@ for (let i = 0; i < Math.min(10, response.docs.length); i++) {
     resultContainer.appendChild(author);
 
     const button = document.createElement("button");
-    button.textContent = "Clicca qui per la descrizione";
+    button.textContent = "Click here for description";
     button.classList.add("buttonSearch");
     button.addEventListener("click", function(){
 
@@ -167,7 +167,7 @@ for (let i = 0; i < Math.min(10, response.docs.length); i++) {
                 // Verifica se ci sono dati disponibili
                 if(!data.description){
                     const noDescription = document.createElement("p");
-                    noDescription.textContent = "non é presente alcuna descrizione per questo libro";
+                    noDescription.textContent = "There is no description for this book";
                     resultDescription.appendChild(noDescription);
                 }
                 else if(data.description.value){
@@ -190,7 +190,7 @@ for (let i = 0; i < Math.min(10, response.docs.length); i++) {
                 console.log(data);
             })
             .catch(error => {
-                console.error('Errore durante la richiesta:', error);
+                console.error('Error during request:', error);
             });
     });
 
@@ -201,12 +201,12 @@ for (let i = 0; i < Math.min(10, response.docs.length); i++) {
     resultContainer.appendChild(image);
 }
 } else {
-console.error('La risposta JSON non contiene un array "docs" valido.');
+console.error('The JSON response does not contain a valid "docs" array.');
 }
 })
 .catch(error => {
 // Gestisci gli errori
-console.error('Errore durante la chiamata all\'API:', error);
+console.error('Error calling API:', error);
 });
 
 });
@@ -224,7 +224,7 @@ const inputValue = document.getElementById("input").value.trim();
 
 // Verifica se l'input è valido
 if (!inputValue) {
-console.error('Inserisci un titolo valido');
+console.error('Please enter a valid title');
 return;
 }
 
@@ -233,7 +233,7 @@ fetch(`${apiUrl2}${inputValue}`)
 .then(response => {
     // Controlla se la richiesta ha avuto successo (status code 200-299)
     if (!response.ok) {
-        throw new Error(`Errore nella richiesta all'API: ${response.status}`);
+        throw new Error(`Error in API request: ${response.status}`);
     }
     // Parsifica la risposta JSON
     return response.json();
@@ -257,7 +257,7 @@ fetch(`${apiUrl2}${inputValue}`)
 
 
             const button = document.createElement("button");
-            button.textContent = "Clicca qui per la descrizione";
+            button.textContent = "Click here for description";
             button.classList.add("buttonSearch");
             button.addEventListener("click", function(){
 
@@ -272,7 +272,7 @@ fetch(`${apiUrl2}${inputValue}`)
                         // Verifica se ci sono dati disponibili
                         if(!data.description){
                             const noDescription = document.createElement("p");
-                            noDescription.textContent = "non é presente alcuna descrizione per questo libro";
+                            noDescription.textContent = "There is no description for this book";
                             resultDescription.appendChild(noDescription);
                         }
                         else if(data.description.value){
@@ -293,7 +293,7 @@ fetch(`${apiUrl2}${inputValue}`)
                         console.log(data);
                     })
                     .catch(error => {
-                        console.error('Errore durante la richiesta:', error);
+                        console.error('Error during request:', error);
                     });
             });
 
@@ -308,12 +308,12 @@ fetch(`${apiUrl2}${inputValue}`)
 
         }
     } else {
-        console.error('La risposta JSON non contiene un array "docs" valido.');
+        console.error('The JSON response does not contain a valid "docs" array.');
     }
 })
 .catch(error => {
     // Gestisci gli errori
-    console.error('Errore durante la chiamata all\'API:', error);
+    console.error('Error calling API:', error);
 });
 
 });
