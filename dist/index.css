@@ -59,6 +59,10 @@ img{
     
 }
 
+.mb{
+    margin-bottom: 50px;
+}
+
 .mt{
     margin-top: 50px;
 }
@@ -90,5 +94,15 @@ img{
     justify-content: center;
 }
 
+.marginHr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.verticalLine{
+    border: 1px solid blue;
+    height: 7000px;
+    margin: 0;
+}
 
 
