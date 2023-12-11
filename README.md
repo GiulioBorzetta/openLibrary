@@ -12,6 +12,6 @@ Nella prima foto si può vedere la schermata appena si apre la pagina.
 
 Nella seconda foto si può vedere la schermata quando si va a cercare un libro e dopo aver cliccato il pulsante "Click here for desscription".
 
-![](images/websiteImg2.png)
+![](images/webSiteImg1.png)
 
 
