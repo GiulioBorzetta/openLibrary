@@ -1,15 +1,10 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 Benvenuti su Open Library Project by Giulio!
 
-This project has been created using **webpack-cli**, you can now run
+[Link per accedere al sito](https://openlibrarybygiulio.netlify.app/)
 
-```
-npm run build
-```
+Questo codice è stato progettato con Webpack e utilizzando gli API di [openlibrary.org](https://openlibrary.org/)
 
-or
+**Come è strutturato il codice?
 
-```
-yarn build
-```
-
-to bundle your application
+![](images/webSiteImg1.png)
+![](images/websiteImg2.png)
