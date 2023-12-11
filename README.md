@@ -7,4 +7,5 @@ Questo codice è stato progettato con Webpack e utilizzando gli API di [openlibr
 **Come è strutturato il codice?
 
 ![](images/webSiteImg1.png)
+
 ![](images/websiteImg2.png)
