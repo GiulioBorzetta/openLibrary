@@ -48,7 +48,7 @@ img{
 .col{
     display: flex;
     flex-direction:column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 30px;
     
 }
@@ -71,7 +71,7 @@ img{
 
 .flexLibrary{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
