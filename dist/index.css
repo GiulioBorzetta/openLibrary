@@ -48,7 +48,7 @@ img{
 .col{
     display: flex;
     flex-direction:column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 30px;
     
 }
@@ -71,7 +71,7 @@ img{
 
 .flexLibrary{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -80,13 +80,6 @@ img{
     transition: 0.5s;
 }
 
-.backgroundBooks{
-    background-color: rgb(215, 235, 253);
-}
-
-.centerLibrary{
-    justify-content: center;
-}
 
 .marginHr{
     margin-top: 30px;
