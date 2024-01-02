@@ -71,6 +71,11 @@ img {
   justify-content: space-between;
 }
 
+.marginHr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .marLeftRight {
   margin-left: 10px;
   margin-right: 10px;
