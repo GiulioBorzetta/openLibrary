@@ -21,18 +21,17 @@
         <h2 class="descriptionTitle">Search for the book you want to read</h2>
         <br>
         <div class="containerSearch">
-            <div class="col">
+            <form class="col" id="searchButton">
                 <div class="row">
                     <label for="lang" class="mr">Find your book here!</label>
 
                     <input type="text" id="input" class="buttonSearch">
-                    <button id="searchButton" class="buttonSearch">Search</button>
+                    <input type="submit" class="buttonSearch" value="Search">
 
-            </div>
+                </form>
 
-            <div class="col mt">
+            <form class="col mt" id="submitSearchCategory">
                 <div class="containerSearch">
-                    <div class="row">
                         <label for="lang" class="mr">Which category do you prefer?</label>
                         <select id="inputSearchCategory" class="buttonSearch">
                         <option value="Fashion">Fashion</option>
@@ -46,44 +45,33 @@
                         <option value="Cooking">Cooking</option>
     
                         </select>
-                        <button id="submitSearchCategory" class="buttonSearch">Search</button>
-
-                    </div>
+                        <input type="submit" class="buttonSearch" value="Submit">
 
                 </div>
-            </div>
+            </form>
 
             </div>
         
 
         </div>
 
-        <div class="mt row">
-            <div class="flexLibrary centerLibrary ml mr">
-                <div id="risultati-api" class="col">
-                    <h1 class="mb">BOOKS SEARCHED</h1>
+        <div class="flexLibrary centerLibrary ml mr mt">
+            <div id="risultati-api" class="col">
+                <h1 class="mb">BOOKS SEARCHED</h1>
+
                 </div>
 
-                <div class="flexLibrary centerLibrary ml mr">
-                    <div class="col">
-                        <hr class="verticalLine">
-                    </div>
-            </div>
-            <div class="flexLibrary centerLibrary ml mr">
                 <div id="descriptionBooks" class="col">
                     <h1 class="mb">DESCRIPTION OF SELECTED BOOKS</h1>
                 </div>
-                
-            </div>
-        </div>
 
     </div>
 
         <br>
 
-        <div class="containerSearch">
-            <button id="moreSearchButton" class="buttonSearch">I WANT MORE(Valid for book search only)</button>
-        </div>
+        <form class="containerSearch" id="moreSearchButton">
+            <input type="submit" class="buttonSearch" value="I WANT MORE(Valid for book search only)">
+        </form>
 
 
 
