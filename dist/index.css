@@ -42,15 +42,14 @@ img{
 .containerSearch{
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
 }
 
 .col{
     display: flex;
     flex-direction:column;
-    flex-wrap: nowrap;
-    padding-left: 30px;
+    flex-wrap: wrap;
     
 }
 
@@ -88,8 +87,9 @@ img{
     margin: 0;
 }
 
-.textColor{
-  color: black;
+.padLeftRight{
+margin-left: 10px;
+margin-right: 10px;
 }
 
 
