@@ -92,6 +92,10 @@ img{
     margin: 0;
 }
 
+.textColor{
+  color: black;
+}
+
 
 /* Absolute Center Spinner */
 .loading {
